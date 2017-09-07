@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /us/rwd/
+
+Sitemap: https://www.americanexpress.com/index-sitemap.xml

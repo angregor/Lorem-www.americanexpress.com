@@ -1,0 +1,1170 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+img { display: block }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+/* blue: #002465 */
+
+/*http://snook.ca/archives/html_and_css/font-size-with-rem*/
+html { -webkit-text-size-adjust: 100%; font-size:62.5%; -webkit-font-smoothing: antialiased;}
+
+body {
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+.navBG {
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+nav {
+	margin: 0 auto;
+	padding: 25px 0;
+	max-width: 1165px;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-text-link {
+	padding: 0 1em;
+	color: #002465;
+	text-decoration: none;
+}
+
+.nav-text-link:hover { text-decoration: underline; }
+
+.nav-links {
+	margin-left: auto;
+}
+
+.nav-box-link {
+	background: #002465;
+ 	border: 1px solid #002465;
+ 	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.3rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	padding: 0 2em;
+	line-height: 2.8em;
+	text-decoration: none;
+	margin-left: 2em;
+	transition: all .125s;
+	display: inline-block;
+}
+
+	.nav-box-link:hover { color: #002465; background: #fff;}
+
+.personalLoansLogo {
+	width: 200px;
+	height: 18px;
+}
+
+.is-sticky .logoBlueBox, .savings-head-logo .logoBlueBox {
+	background-image: url(../../common/img/bluebox.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	flex-shrink: 0;
+}	
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+}
+
+.hero {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0 170px 0;
+}
+
+.videoBox {
+	width: 57%;
+	max-width: 640px;
+	position: relative;
+	margin-right: 60px;
+	flex-shrink: 0;
+}
+
+.videoFPO {
+	padding-top: 56.25%;
+	background: #777;
+}
+
+.hero-text {
+	width: 43%;
+	max-width: 480px;
+	position: relative;
+}
+
+.feature {
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	color: #333333;
+	display: block;
+	font-size: 1.6rem;
+	text-align: left;
+	line-height: 1.3em;
+	margin: 0;
+}
+
+.feature-divider { 	border-bottom: 2px solid #009609; margin: 1em 0; }
+
+.motif {
+	position: absolute;
+	left:15%;
+	top: -133px;
+	background-image: url(../img/motif2.svg);
+	background-repeat: no-repeat;
+	width: 524px;
+	height: 180px;
+	transform: scale(.8);
+}
+
+.toBusiness {
+	border: 1px solid #006792;
+	font-size: 1.4rem;
+	line-height: 3em;
+	padding: 0 6em 0 1.5em;
+	color: #006792 !important;
+	white-space: nowrap;
+	background-image: url(../img/toBusiness.svg);
+	background-size: 12%;
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+	transition: all .15s;
+    display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -95px;
+}
+
+	.toBusiness:hover { background-color: #f2f2f2; }
+
+.disclaimers {
+	padding: 35px 11.5%;
+	background: linear-gradient(to right, #1274B8 0%, #002663 100%);
+	color: #fff;
+	margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+}
+
+.disclaimer-left a { color: #8DD7E8; }
+
+.disclaimer-left { 
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 1.5rem;
+	line-height: 1.4em;
+ 	width: 29%;
+ 	margin-right: 6%;
+ 	flex-shrink: 0;
+ }
+
+.disclaimer-right { 
+	font-size: 1.2rem;
+	line-height: 1.5em;
+}
+
+.fineprint { font-size: 1.1rem; }
+
+.rule { background: #B9B9B9; height: 1px; width: 90%; max-width: 1250px; margin: 50px auto; }
+
+section {
+	max-width: 1250px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.section-head {
+	color: #002465;
+	text-align: center;
+	font-size: 1.6rem;
+	margin: 0;
+	line-height: normal;
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+}
+
+.section-subhead {
+	font-size: 1.7rem;
+	color: #4F4F4F;
+	line-height: 1.3em;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+
+.steps {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1150px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.step {
+	color: #000;
+	width: 25%;
+ }
+
+.step-head {
+	font-size: 1.9rem;
+	line-height: 1.2em;
+	height: 70px;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	text-align: left;
+	margin-top: 40px;
+}
+
+
+.step-number {
+	font-size: 2.8rem;
+	text-align: center;
+	margin-bottom: .75em;
+}
+
+.step-divider {
+	background: #C5E1A4;
+	height: 3px;
+	margin: 0 auto;
+	width: 55px;
+}
+
+.step-text {
+	font-size: 1.6rem;
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	text-align: center;
+	line-height: 1.4em;
+	color: #2B2B2B;
+}
+
+	.step-text p { margin-bottom: 0; }
+
+.steps-more {
+	text-align: center;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	max-width: 700px;
+	margin: 2em auto;
+	line-height: 1.4em;
+}
+
+.twoCols {
+	display: flex;
+	justify-content: space-between;
+}
+
+.twoCol {
+	background-repeat: no-repeat;
+	padding: 0 20px 0 350px;
+	width: 48%;
+	display: block;
+	color: #2B2B2B;
+	text-decoration: none;
+}
+
+.twoCol p {
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+}
+
+.twoCol p span {
+	color: #006792;
+}
+
+.twoCol-dc {
+	background-image: url(https://www.americanexpress.com/content/dam/amex/us/personal-loans/img/landing_dc.jpg);
+}
+
+.twoCol-pl {
+	background-image: url(https://www.americanexpress.com/content/dam/amex/us/personal-loans/img/landing_pl.jpg);
+}
+
+.calc {
+	display: flex;
+	max-width: 1160px;
+	width: 95%;
+	margin: 0 auto;
+	justify-content:space-between;
+	padding-top: 80px;
+}
+
+.calc-left {
+	max-width: 320px;
+	margin-right: 40px;
+}
+
+	.calc-left p { line-height: 1.5em; }
+
+.calc-head {
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	margin: 0 0 1.5em 0;
+	line-height: 1.4em;
+	font-size: 1.6rem;
+	color: #333;
+}
+
+.calc-step {
+	display: flex;
+	background: #F2F2F2;
+	align-items: center;
+	margin-bottom: 40px;
+	padding-right: 30px;
+	min-width: 600px;
+}
+
+.calc-number {
+	background: #002465;
+	color: #fff;
+	font-size: 2.8rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	width: 50px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-right: 5px solid #fff;
+	flex-shrink: 0;
+}
+
+.calc-label {
+	font-size: 1.8rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	padding-left: 1em;
+	white-space: nowrap;
+	width:300px;
+}
+
+	.calc-label span { display: block; margin-top: 3px; font-size: 1.2rem; 	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; }
+
+.calc-field {
+	display: flex;
+	width:340px;
+}
+
+.calc-amount {
+	width: 100%;
+	font-size: 2rem;
+	padding-left: .75em;
+	max-width: 245px;
+}
+
+
+.dollar {
+	color: #fff;
+	font-size: 2.5rem;
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	height: 2em;
+	width: 2em;
+	background: #3B9D2E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calc-results {
+	display: flex;
+	background: #F2F2F2;
+	padding: 2.5em 2em;
+	justify-content: space-between;
+	align-items: center;
+	width: 95%;
+	margin: 0 auto;
+	max-width: 1250px;
+}
+
+.calc-results-label {
+	color: #000;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	text-align: right;
+	font-size: 1.8rem;
+	line-height: 1.3em;
+	width: 25%;
+}
+
+.calc-results-payments {
+	display: flex;
+	justify-content: space-between;
+}
+
+.calc-results-payment {
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 0 2.5em;
+	line-height: 1.2em;
+	border-right: 1px solid #ccc;
+}	
+
+.calc-results-payment span { font-family: 'BentonSans-Bd', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; font-size: 2.9rem; display: block; margin: 15px auto 0 auto; color: #000; }
+.calc-results-payment:last-of-type { border: none; }
+.mps { width: 80px; margin: 0 auto; }
+
+.calc-step-disabled {
+	opacity: .4;
+}
+
+.calc-step-disabled .calc-number {
+	background: #ccc;
+}
+
+.calc-results-footnote-box {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 2em;
+}
+
+.calc-results-footnote {
+	font-size: 1.1rem;
+	line-height: 1.4em;
+	max-width: 780px;
+	margin-top: 20px;
+}
+
+.PoorRate {
+	background: #F2F2F2;
+	padding: 2.5em 2em;
+	width: 95%;
+	margin: 0 auto;
+	max-width: 1250px;
+	line-height: 1.3em;
+	display: none;
+}
+
+.footerBG {
+	width: 100%;
+	max-width: 1600px;
+	height: 300px;
+	background-image: url(../img/footerBG.jpg);
+	background-position: 100% 0;
+	margin: 60px auto 0 auto;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.motif-footer {
+	position: absolute;
+	bottom: -48px;
+	left: 16%;
+	background-image: url(../img/motif2.svg);
+	width: 524px;
+	height: 180px;
+	transform: scale(.8);
+}
+
+.footer-text {
+	width: 90%;
+	max-width: 1130px;
+	margin: 90px auto 60px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text p {
+	-webkit-flex:1;
+	line-height: 1.5em;
+}
+
+	.footer-head { text-align: left; margin: 2.5em auto 1em auto; max-width: 1130px; width: 90%; padding: 0; font-size: 2.4rem; }
+
+.footer-fineprint { font-size: 1.3rem; display: block; line-height: normal; margin: 2em auto 6em auto; border-top: 1px solid #eee; padding-top: 1em; width: 90%; max-width: 1140px; }
+
+.cta {
+	background: #002465;
+ 	border: 1px solid #002465;
+ 	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.6rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	padding: 0 2.5em;
+	line-height: 3.2em;
+	text-decoration: none;
+	margin-left: 3em;
+	transition: all .125s;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+	.cta:hover { color: #002465; background: #fff;}
+
+.cta-sm { display: none; }
+
+.show-small {
+	display: none;
+}
+
+.hero-small {
+	max-width: 1250px;
+	padding-top: 32%;
+	width: 100%;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-image:url(../img/loan_uses_heroBG.jpg);
+}
+
+.hero-small-head {
+	position: absolute;
+	color: #fff;
+	font-size: 5.5vw;
+	font-family: 'BentonSans-Bd', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	top: 20%;
+	left: 18%;
+	text-transform: uppercase;
+	max-width: 64%;
+	line-height: inherit;
+}
+
+.hero-small-subhead { 
+	font-size: 1.6vw;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+}
+
+.ideas {
+	max-width: 1070px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.idea {
+	margin-bottom: 50px;
+	width: 48%;
+	text-align: center;
+}
+
+.idea-hero-img { padding-top: 59.6153846153846%; background-repeat: no-repeat; background-size: contain; }
+
+.idea-text {
+
+}
+
+.idea-text p {
+	font-size: 1.6rem;
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	line-height: 1.4em;
+}
+
+.idea-head {
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 2.1rem;
+	line-height: 1.1em;
+	margin: 1em 0;
+	color: #002465;
+}
+
+.debt {
+	display: flex;
+	max-width: 1070px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.debt-hero {
+	margin-right: 5%;
+	width: 40%;
+	flex-shrink: 0;
+}
+
+.debt-footnote {
+	font-size: 1.2rem;
+	line-height: 1.4em;
+	margin: 3em auto;
+	max-width: 1070px;
+	color: #666;
+}
+
+
+.debt-text h2, .debt-text h3, .debt-text p {
+	text-align: left;
+}
+
+.debt-text h3 { padding: 0; }
+.debt-text p { line-height: 1.5em; }
+
+.save-money {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin: 60px auto 0 auto;
+	width: 80%;
+}
+
+.save-money p { line-height: 1.6em; }
+
+.save-money-left, .save-money-right {
+	width: 47%;
+}
+
+.save-money-head {
+	font-size: 2.3rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	margin: 0 0 .5em 0;
+	text-align: left;
+	padding: 0;
+}
+
+.savings-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 40px 0 60px 0;
+}
+
+.savings-notes {
+	width: 85px;
+	font-size: 1.4rem;
+	text-align: right;
+	line-height: 1.4em;
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+.savings-notes div { 	margin-top: 115px; }
+
+.note-sm {
+	display: inline-block;
+	font-size: 1.1rem;
+	padding-top: 5px;
+	display: none;
+}
+
+.savings-debt, .savings-nextstep {
+	width: 28%;
+	margin: 0 40px 0 0;
+}
+
+
+.savings-head-logo {
+	border-bottom: 1px solid #82CEC1;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-top: -10px;
+}
+
+.savings-head-logo-fn { 
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	position: relative;
+	top: -12px;
+ }
+
+.savings-head {
+	font-size: 2.2rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #b9b9b9;
+	text-align: center;
+	height: 52px;
+}
+
+.savings-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 0;
+	padding: 0 1em 2em 1em;
+	border-bottom: 1px solid #b9b9b9;
+}
+
+	.savings-cell:nth-child(even) {
+		text-align: right;
+	}
+
+	.savings-row:last-of-type {
+		margin-bottom: 0;
+	}
+
+.savings-row-thick {
+	border-width: 3px !important;
+}
+
+.savings-total {
+	width: 24%;
+	border: 15px solid #82CEC1;
+	margin-top: 52px;
+	font-size: 2.2rem;
+	padding: 2em;
+	line-height: 1.3em;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.savings-total div { max-width: 190px; }
+
+.savings-nextstep .savings-row {
+	border-color: #82CEC1;
+}
+
+.savings-footnote {
+	font-size: 1.1rem;
+	color: #444;
+	line-height: 1.8em;
+	margin-top: 1em;
+}
+
+/* FAQ */
+.content {
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.anchorNav {
+	width: 36%;
+	padding: 1em;
+}
+
+.faqs {
+	width: 64%;
+	border-left: 1px solid #dfdfdf;
+	padding: 2em 4em;
+}
+
+.catAnchors {
+	width: 95%;
+}
+
+.catLink {
+	display: block;
+	color: #333;
+	padding: .5em 1em;
+	font-size: 1.6rem;
+	border: 1px solid #ccc;
+	margin-bottom: 4px;
+	text-decoration: none;
+	line-height: 1.4em;
+}
+
+.catLink:hover {
+	background: #eee;
+	text-decoration:none;
+}
+
+.q {
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+}
+
+.faq h1 {
+	color: #002663;
+	font-size: 4.5rem;
+	margin-bottom: .7em;
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+}
+
+.faq h2 {
+	font-size: 3rem;
+	color: #4c4c4c;
+	font-weight: 400;
+	margin-bottom: 1em;
+	margin-top: 0;
+}
+
+.faq h3 {
+	font-size: 2.2rem;
+	color: #002663;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	margin-bottom: 0 0 1em 0;
+	line-height: 1.3em;
+	text-align: left;
+	padding: 0;
+}
+
+.faq p {
+	font-size: 1.5rem;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.faq ol {
+	list-style: decimal;
+	margin-left: 1.5em;
+}
+
+.faq ul {
+	margin-left: 1.5em;
+	list-style: disc;
+}
+
+.faq li {
+	font-size: 1.4rem;
+	line-height: 1.4em;
+	margin: 1em 0;
+}
+
+/* end FAQ */
+
+.nav-bottom {
+	display: none;
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto 35px auto;
+	padding-top: 35px;
+	border-top: 1px solid #ccc;
+}
+
+h1 {
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 3rem;
+	color: #004287;
+	margin-bottom: 1.25em;
+	line-height: 1.3em;
+}
+
+h2 {
+	color: #fff;
+	font-size: 1.9rem;
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	margin: 1.8em 0;
+	line-height: 1.3em;
+}
+
+.h2-rule { width: 70%; background: #ccc; height: 1px; margin: 1.5em 0; }
+
+h3 {
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 3.1rem;
+	color: #002465;
+	margin: .8em 0;
+	text-align: center;
+	padding: 0 1em;
+}
+
+h4 {
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	max-width: 720px;
+	margin: 3em auto;
+	line-height: 1.5em;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+h5 {
+	font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	font-size: 2.2rem;
+	margin-bottom: 1em;
+}
+
+strong { font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; }
+
+p {
+	line-height: 1.3em;
+	margin-bottom: 1em;
+}
+
+a { color: #006792; text-decoration: none; }
+
+p a:hover { text-decoration: underline; }
+
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	font-size: 60%;
+	font-family: 'BentonSans-Bk', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+select.pretty-dropdown { 
+ 	background-color: #ffffff;
+	color: #40494e;
+	margin: 0;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+ 	border: 1px solid #b2b7bd;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'BentonSans', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;
+	padding: 6px 12px;
+	background-image: url("../img/dd-down.svg");
+	background-position:  right center;
+	background-repeat: no-repeat;
+	background-size: 36px;
+	overflow: hidden;
+	text-indent: 0.01px;
+	-moz-appearance: none  !important; 
+	appearance: none  !important;
+	-ms-appearance: none  !important; 
+	-o-appearance: none !important;
+	-webkit-appearance: none;
+	outline: none;
+	box-shadow: none;
+	margin-bottom: 10px; 
+	width: 100%;
+	max-width: 295px; 	
+}
+
+select.pretty-dropdown:hover {
+ 	background-color: #ffffff;
+	color: #40494e;
+ 	transition: background-color  .2s;
+ 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+select.pretty-dropdown::-ms-expand { 
+	display: none;
+}
+
+/*IE 10 Flexbox Fixes */
+
+nav {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: justify;  /* justify-content: space-between IE10 */
+}
+
+.hero {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+}
+.steps {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+
+.twoCols {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+.calc {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+.calc-step {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+}
+.calc-number {
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+}
+.calc-field {
+	display: -ms-flexbox;
+}
+.dollar {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+}
+.calc-results {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	-ms-flex-pack: justify;  
+}
+.calc-results-payments {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+
+.footer-text {
+	display: -ms-flexbox;
+}
+.save-money {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+.savings-box {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+
+.savings-row {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+.savings-total {
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+}
+.content {
+	display: -ms-flexbox;
+	-ms-flex-pack: justify;  
+}
+
+@media screen and (min-width: 1250px){
+	.hero-small-head { font-size: 7.2rem; }
+	.hero-small-subhead { font-size: 2.2rem; }
+}
+
+@media screen and (max-width: 1200px){
+	.twoCols { display: block; }
+	.twoCol { width: 100%; min-height: 175px; margin-bottom: 30px; }
+	h1 { font-size: 2.5rem; }
+	.feature { font-size: 1.45rem; }
+}
+
+@media screen and (max-width: 1100px){
+	.calc { display: block; }
+	.calc-left { max-width: 100%; }
+	.cta-sm { display: inline-block; margin: 30px 0 0 24px;}
+	.cta-sm a { margin-left: 0; }
+	.cta-lg { display: none; }
+	.savings-notes { font-size: 1.2rem; }
+	.savings-cell { font-size: 1.4rem; }
+	.motif { left: 2% }
+}
+
+@media screen and (max-width: 980px){
+	.savings-debt, .savings-nextstep { width: 38%; }
+	.savings-total { width: 100%; font-size: 2.2rem; padding: 1em; border-width: 10px; }
+	.savings-total div { max-width: 100%;text-align: center; width: 100%; }
+
+}
+
+@media screen and (max-width: 950px){
+	.nav-text-link { font-size: 1.4rem; padding: 0 .75em; }
+	.nav-box-link { font-size: 1.2rem; }
+	.idea-head { font-size: 2rem; }
+	.idea-text p { font-size: 1.4rem; }
+	.save-money { width: 90%; }
+	.debt-text p { font-size: 1.4rem;  }
+	.debt-footnote { font-size: 1.1rem; }
+}
+
+@media screen and (max-width: 860px){
+	.hero { flex-direction: column; align-items: center; height: auto; padding: 30px 0 0 0; }
+	h1 { text-align: center; }
+	.videoBox { margin: 0; width: 100%; max-width: 640px; }
+	.hero-text { width: 90%; max-width: 640px; margin: 30px auto 100px auto; }
+	.toBusiness { bottom: -70px; }
+	.hero-small { padding-top: 12%; background-position: 50% 100%; margin-bottom: 15%; }
+	.hero-small-head { max-width: 100%; margin: 0 auto; left: auto; top: auto; color: #002465; top: 120%; text-align: center; display: inline; font-size: 3rem;  text-transform: none; font-family: 'BentonSans-Md', 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal;}
+	.hero-small-subhead { display: inline; font-size: 3rem; text-transform: none; }
+	.show-large { display: none; }
+	.show-small { display: block; }
+	.disclaimers { flex-direction: column; padding: 0; }
+	.disclaimer-left { width: 100%; margin-bottom: 1em; padding: 1.5em 2em 1em 2em; text-align: center; }
+	.disclaimer-right { width: 100%; background: #f5f5f5; color: #666; padding: 2em; font-size: 1.1rem; }
+	.debt { flex-direction: column; }
+	.debt-hero { width: 75%; margin: 0 auto 20px auto; max-width: 450px; }
+	.debt-text h2, .debt-text h3 { text-align: center; }
+}
+
+@media screen and (max-width: 815px){
+	.savings-notes { display: none; }
+	.savings-debt, .savings-nextstep { width: 48%; margin-left: 0; margin-right: 0; }
+	.savings-head, .savings-row-thick { margin-bottom: 0; }
+	.note-sm { display: inline-block; }
+}
+
+@media screen and (max-width: 790px){
+	.screen-lg { display: none; }
+	h2 {font-size: 1.6rem; }
+	.step { width: 30%; }
+	.step-text { font-size: 1.4rem; }
+	.step-number { font-size: 2rem; }
+	.motif-footer { left: 4%; }
+	.calc-step { flex-direction: column; align-items: flex-start; height: 125px; min-width: 0;}
+	.calc-label { margin: 1em 0 .5em 2.5em; }
+	.calc-number { position: absolute; height: 125px; }
+	.calc-field { padding-bottom: 1em; width: 100%; padding-left: 60px; }
+	.calc-results { padding: 1.5em 1em; }
+	.nav-bottom { display: block; }
+	.nav-bottom .nav-text-link { display: block; text-align: center; margin-bottom: 1em; }
+}
+
+@media screen and (max-width: 600px){
+	.motif { display: none; }
+	h3 { font-size: 2.3rem; }
+	h4 { font-size: 1.4rem; }
+	.steps { display: block; }
+	.step { width: 100%; }
+	.step-head { margin: 20px 0; height: auto;}
+	.step-text { margin-bottom: 2em; }
+	.twoCol { padding: 0; background-image: none; min-height: auto; border: 1px solid #ccc; padding: 1em; box-shadow: 1px 1px 3px rgba(0,0,0,.2); }
+	.motif-footer { width: 390px; }
+	.footer-text { display: block; }
+	.calc-results { flex-direction: column; }
+	.calc-results-label { width: 100%; text-align: center; margin-bottom: 1em; }
+	.calc-results-payments { display: block; }
+	.calc-results-payment { padding: 1em 0 2em 0; border-right: none; border-bottom: 1px solid #ccc; }
+	.ctaBox { text-align: center; margin-top: 30px; }
+	.cta { margin-left: 0; }
+	.mps { width: auto; }
+	.hero-small-head, .hero-small-subhead { font-size: 2.4rem; }
+	.save-money { display: block; }
+	.save-money-left, .save-money-right { width: 100%; }
+	.savings-debt, .savings-nextstep { width: 100%;margin-bottom: 40px; }
+	.savings-row { margin: 1em 0; padding-bottom: 1em; }
+	.savings-row-thick { margin-bottom: 0; }
+	.savings-total { margin-top: 0; }
+	.content { display: block; }
+	.anchorNav, .catAnchors, .faqs { width: 100%; }
+	.faqs { padding: 2em; }
+	.faq h1 { text-align: center; }
+}
+
+@media screen and (max-width: 525px){
+	.nav-links { display: flex; justify-content: space-around; align-items: center; }
+	.nav-text-link { display: none; }
+	.calc-label { font-size: 1.45rem; margin-left: 3.25em;}
+	.calc-results-label { font-size: 1.6rem; }	
+	.steps-more { font-size: 1.4rem; }
+	.ideas { flex-wrap: nowrap; flex-direction: column;}
+	.idea { width: 100%; margin-bottom: 20px; }
+	.hero-small { margin-bottom: 18%; }
+}
+
+@media screen and (max-width: 460px){
+	.logoContainer { justify-content: center; margin-bottom: 10px; }
+	.is-sticky .logoBlueBox { width: 20px; height: 20px; }
+	nav { display: block; padding: 15px 0;}
+	.nav-box-link { margin: 10px auto 0 auto; }
+	.rule { margin: 35px auto; }
+	.footer-text { font-size: 1.4rem; margin-top: 20px; }
+	.motif-footer { display: none; }
+	.footerBG { height: 250px; }
+	.hero-small { padding-top: 18%; }
+	.hero-small-head, .hero-small-subhead { font-size: 2rem;; }
+}
+
+
+
+/* http://fellowtuts.com/html-css/offsetting-anchor-hash-tag-links-to-adjust-for-fixed-header */
+.offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 100px;      /* Give height of your fixed element */
+    margin-top: -100px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+
